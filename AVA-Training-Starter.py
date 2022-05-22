@@ -231,7 +231,7 @@ print("length of validation set:", len(valid_ds))
 train_loader = torch.utils.data.DataLoader(train_ds, batch_size=6, shuffle=True, 
                                            num_workers=12, pin_memory=True,
                                           collate_fn=collate_fn)
-val_loader = torch.utils.data.DataLoader(valid_ds, batch_size=6, 
+val_loader = torch.utils.data.DataLoader(valid_ds, batch_size=1, 
                                          shuffle=False, num_workers=12, 
                                          pin_memory=True, collate_fn=collate_fn)
 
